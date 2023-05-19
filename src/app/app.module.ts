@@ -7,6 +7,7 @@ import { BerveagesComponent } from './berveages/berveages.component';
 import { UserComponent } from './user/user.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { UxPipe } from './pipes/ux.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { UxPipe } from './pipes/ux.pipe';
     BerveagesComponent,
     UserComponent,
     UsdInrPipe,
-    UxPipe
+    UxPipe,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

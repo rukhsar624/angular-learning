@@ -85,4 +85,33 @@
             </li>
         </ul>
     </div>
+    <div class="pipeFilter">
+        <div class="container">
+            <div class="form-group">
+                <label for="search">Search Product by Name</label>
+                <input type="text" class="form-control" id="search" 
+                     placeholder="Search Product by Name" [(ngModel)]="nameSearch">
+            </div>
+            <div class="row">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Availability</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let productItem of productItems | filter:nameSearch">
+                        <th scope="row">{{productItem.sno}}</th>
+                        <td>{{productItem.name}}</td>
+                        <td>{{productItem.price}}</td>
+                        <td>{{productItem.availability}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
 </div>

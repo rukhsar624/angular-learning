@@ -18,13 +18,33 @@ export class AppComponent implements OnInit {
   'Anil Sidhu John',
 ]  
   users=['Anil' , 'Sidhu' , 'John' , 'Smith' , 'Peter' , 'Sam' ]
-  usersDetails=[
+  nameSearch:any='';
+  usersDetails:any[]=[
       {name:'Anil' , email:'anil12@gmail.com' , age:'25'},
       {name:'Sidhu' , email:'Sidhu12@gmail.com' , age:'23'},
       {name:'John' , email:'John12@gmail.com' , age:'23'},
       {name:'Smith' , email:'Smith12@gmail.com' , age:'21'},
       {name:'Peter' , email:'Peter12@gmail.com' , age:'34'},
       {name:'Sam' , email:'Sam12@gmail.com' , age:'33'},
+  ]
+  productItems=[
+    {sno:1 ,  name :'Mobile', price:'$900' ,availability:'available'},
+    {sno:2 ,  name :'Laptop', price:'$113' ,availability:'not available'},
+    {sno:3 ,  name :'Smart Phone', price:'$30' ,availability:'available'},
+    {sno:4 ,  name :'Washing Machines', price:'$100' ,availability:'not available'},
+    {sno:5 ,  name :'Electric fan', price:'$110' ,availability:'available'},
+    {sno:6 ,  name :'Television', price:'$110' ,availability:'not available'},
+    {sno:7 ,  name :'Ac', price:'$300' ,availability:'not available'},
+    {sno:8 ,  name :'Computer', price:'$500' ,availability:'available'},
+    {sno:9 ,  name :'Robot', price:'$500' ,availability:'available'},
+    {sno:9 ,  name :'Mobile', price:'$500' ,availability:'available'},
+
+
+
+
+
+
+
   ]
   pipeUsers={name:'Rukhsar', email:'rukhsaranwar56@gmail.com'}
   isValue:boolean=false;
