@@ -1,0 +1,88 @@
+<div class="parent">
+    <h2>parent Component</h2>
+    <ul>
+        <li *ngFor="let bev of baverages">
+            {{bev}}
+        </li>
+    </ul>
+    <p>{{name}}</p>
+    <app-berveages [beverages]="currentBerveages" (newBeveragesEvent)="addBerveages($event)"></app-berveages>
+    <app-user [hero]="data" [hero1]="data1" [info]="data3.name" [aliinfo]="data4.name"
+     (parentComponent)="parentComponent($event)"></app-user>
+
+     <!-- Same time par property update karwana aur display karwana -->
+     <h2>Two Way Binding</h2>
+     <div class="twoWayBinding">
+    <input type="text" [(ngModel)]="bind">
+    <h1>{{bind}}</h1>
+    </div>
+    <input type="text" [(ngModel)]="bind1">
+    <h2>{{bind1}}</h2>
+    <h2>Ng class</h2>
+    <div class="ngClass" [ngClass]="clsName">
+       Ng class Learning
+    </div>
+    <div class="styleBidding">
+        <h3>Style Binding</h3>
+       <h5 [style.color]="color">{{title}}</h5>
+       <button (click)="changeColor()">color change</button>
+    </div>
+    <div class="ngIf">
+        <h3>ng If</h3>
+        <button (click)="showContent()">show content</button>
+        <p *ngIf="contentValue; then thenblock else elseblock">Lorem ipsum dolor sit.</p>
+        <ng-template #thenblock>
+            <p>show </p>
+        </ng-template>
+        <ng-template #elseblock>
+            <p>no block has been created yet</p>
+        </ng-template>
+    </div>
+    <button (click)="showContents()">showDiv</button>
+    <p *ngIf="isValue; else elseShow">show my content</p>
+    <ng-template #elseShow>
+        <p>no block has been created yet 2</p> 
+    </ng-template>
+    <div class="ngfor">
+        <h2>ng For</h2>
+        <span *ngFor="let user of users">Name is:{{user}}</span>
+        <h5 *ngFor="let users of usersDetails">{{users.name}}   <br> {{users.email}} <br> {{users.age}}</h5>
+    </div> 
+    <div class="pipes">
+        <h1>Pipes</h1>
+        <h5>{{title | uppercase}}</h5>
+        <h5>{{title | lowercase}}</h5>
+        <h6>{{today | date : 'fullDate'}}</h6>
+        <h6>{{today | date : 'longDate'}}</h6>
+        <h6>{{today | date : 'mediumDate'}}</h6>
+        <h6>{{today | date : 'longDate'}}</h6>
+        <h6>{{today | date : 'full'}}</h6>
+        <h6>{{today | date : 'medium'}}</h6>
+        <h6>{{today | date : 'full'}}</h6>
+        <h6>{{today | date : 'long'}}</h6>
+        <h6>{{today | date : 'shortTime'}}</h6>
+        <h6>{{today | date : 'fullTime'}}</h6>
+        <h6>{{today | date : 'longTime'}}</h6>
+        <h6>{{today | date : 'mediumTime'}}</h6>
+        <h1>{{upperCase(title)}}</h1>
+    </div>
+    <div class="advancePipes">
+        {{title | slice :3 :6   }}\
+        <!-- use to pipe -->
+        {{title | slice :6:9 | uppercase}}
+        <h2>{{pipeUsers | json | slice:13:20 |uppercase}}</h2>
+        <p>Number Pipe</p>
+      <h2>{{45 | currency}}</h2>
+    </div>
+    <div class="customPipe">
+        <h6 class="num">{{20 | usdInr: 100}}</h6>
+    </div>
+    <div class="customPipesTwo">
+        <h1>{{value | ux}}</h1>
+        <ul>
+            <li *ngFor="let userName of userNames">
+                {{userName | ux}}
+            </li>
+        </ul>
+    </div>
+</div>

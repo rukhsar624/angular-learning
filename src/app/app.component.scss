@@ -1,0 +1,32 @@
+.parent{
+    border:1px solid #000;
+    margin: 20px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+li{
+    list-style: circle;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.one{
+    background-color:#C8A2C8;
+    color: #fff;
+}
+button{
+    background-color: #C8A2C8;
+    color: #ffff;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.num{
+    font-size: 30px;
+}
