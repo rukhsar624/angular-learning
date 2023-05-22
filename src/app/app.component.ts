@@ -38,14 +38,24 @@ export class AppComponent implements OnInit {
     {sno:8 ,  name :'Computer', price:'$500' ,availability:'available'},
     {sno:9 ,  name :'Robot', price:'$500' ,availability:'available'},
     {sno:9 ,  name :'Mobile', price:'$500' ,availability:'available'},
-
-
-
-
-
-
-
   ]
+groceryItems=[
+  {sno:1 , name:'Vegetable' , prices:'$ 700' , availability:'Available'},
+  {sno:2 , name:'Rice' , prices:'$ 400' , availability:'Available'},
+  {sno:3 , name:'Frozen Vegetable' , prices:'$ 100' , availability:'Not Available'},
+  {sno:4 , name:'Bread' , prices:'$ 100' , availability:'Available'},
+  {sno:5 , name:'Vegetable' , prices:'$ 700' , availability:'Not Available'},
+  {sno:6 , name:'Fruit' , prices:'$ 500' , availability:'Available'},
+  {sno:7 , name:'Dried Fruit' , prices:'$ 700' , availability:'Available'},
+  {sno:8 , name:'Milk' , prices:'$ 200' , availability:'Available'},
+  {sno:7 , name:'Flour' , prices:'$ 900' , availability:'Available'},
+  {sno:7 , name:'Yogurt' , prices:'$ 50' , availability:'Available'},
+
+
+
+
+
+]  
   pipeUsers={name:'Rukhsar', email:'rukhsaranwar56@gmail.com'}
   isValue:boolean=false;
   bind:any;
